@@ -12,3 +12,7 @@ Proyecto de práctica para el taller de Git y GitHub.
 ## Autor
 
 ANDER2013
+
+## Colaborador
+
+hola
