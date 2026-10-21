@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos - Dashboard de asistencia Nettplus</title>
+  </head>
+
+  <body>
+    <img src="img/logo.jpeg" alt="Logo HTML" width="30%">
+    <h1>Control de asistencia y ausentismos</h1>
+    <h3>Equipo: </h3>
+    <ul>
+        <li>Anderstone Paccha</li>
+        <li>Rodrigo Seraquive</li>
+        <li>Cristopher Flores</li>
+    </ul>
+
+    <hr>
+    <h2>El proyecto</h2>
+    <p>La plataforma de asistencia de Nettplus guarda marcaciones, permisos y horas extras, pero no hace resúmenes. Nadie revisa los datos a diario y Contabilidad digita la nómina a mano. La solución es una aplicación web que recibe los reportes en Excel y los muestra en un dashboard con el control diario, indicadores y un resumen mensual para la nómina (corte del día 21 al 20).</p>
+
+    <hr>
+    <h2>Usuarios</h2>
+    <table border="1">
+      <thead>
+        <tr><th>Usuario</th><th>Qué hace</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>RRHH</strong></td><td>Carga los reportes y revisa ausencias, atrasos y horas extras</td></tr>
+        <tr><td><strong>Contabilidad</strong></td><td>Exporta el resumen mensual para la nómina</td></tr>
+        <tr><td><strong>Desarrollo Organizacional</strong></td><td>Revisa indicadores y administra usuarios</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+    <h2>Requisitos funcionales</h2>
+    <table border="1">
+      <thead>
+        <tr><th>Códigos</th><th>Módulo</th><th>Lo esencial</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>RF01 - RF06</strong></td><td>Carga de archivos</td><td>Cargar y validar los Excel, evitar duplicados y guardar el historial</td></tr>
+        <tr><td><strong>RF07 - RF15</strong></td><td>Dashboard diario</td><td>Ver ausentes, atrasos, horas extras, vacaciones y marcaciones incompletas con filtros</td></tr>
+        <tr><td><strong>RF16 - RF19</strong></td><td>Resumen mensual</td><td>Resumen del corte 21 al 20 y exportación a Excel y PDF</td></tr>
+        <tr><td><strong>RF20 - RF24</strong></td><td>Indicadores</td><td>Atrasos, ausentismo, headcount y rotación por área</td></tr>
+        <tr><td><strong>RF25 - RF26</strong></td><td>Acceso</td><td>Usuario y contraseña con permisos por rol</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+    <h2>Requisitos no funcionales</h2>
+    <table border="1">
+      <thead>
+        <tr><th>Categoría</th><th>Códigos</th><th>Lo esencial</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Seguridad</strong></td><td>RNF01 - RNF03</td><td>HTTPS, contraseñas cifradas y permisos por rol</td></tr>
+        <tr><td><strong>Usabilidad</strong></td><td>RNF04 - RNF06</td><td>Máximo 3 clics, interfaz en español con el logo de Nettplus</td></tr>
+        <tr><td><strong>Accesibilidad</strong></td><td>RNF07 - RNF08</td><td>Buen contraste y uso con teclado</td></tr>
+        <tr><td><strong>Rendimiento</strong></td><td>RNF09 - RNF10</td><td>Archivo en menos de 1 minuto y pantallas en menos de 3 segundos</td></tr>
+        <tr><td><strong>Compatibilidad</strong></td><td>RNF11 - RNF12</td><td>Chrome, Edge, Firefox y archivos .xlsx actuales</td></tr>
+        <tr><td><strong>Disponibilidad</strong></td><td>RNF13 - RNF14</td><td>95 % mensual y no perder datos de cortes anteriores</td></tr>
+        <tr><td><strong>Mantenimiento</strong></td><td>RNF15 - RNF16</td><td>Reglas configurables y lista para una futura API</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+    <h2>Alcance</h2>
+    <table border="1">
+      <thead>
+        <tr><th>Incluido</th><th>Fuera de alcance</th><th>Por confirmar</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Carga de reportes<br>
+            Dashboard diario<br>
+            Resumen mensual<br>
+            Indicadores<br>
+            Login y roles
+          </td>
+          <td>
+            Integración por API<br>
+            Cambios en la plataforma biométrica<br>
+            Registro de marcaciones<br>
+            Portal para colaboradores<br>
+            Cálculo completo de nómina
+          </td>
+          <td>
+            Formato de nómina<br>
+            Colores y logo<br>
+            Tolerancia del atraso<br>
+            Clasificación de horas extras<br>
+            Registro de altas y bajas
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+</html>
